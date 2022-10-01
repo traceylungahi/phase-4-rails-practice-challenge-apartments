@@ -9,7 +9,7 @@ class LeasesController < ApplicationController
 
     def destroy
         lease = Lease.find(params[:id])
-        apartment.destroy
+        lease.destroy
         head :no_content 
     end 
 
